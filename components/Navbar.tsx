@@ -9,8 +9,9 @@ import NavLink from "./NavLink";
 export default function Navbar() {
   return (
     <>
-      <header className="h-24 fixed top-0 left-0 right-0 bg-white flex items-center px-3 md:px-20 z-50 border-b border-gray-100">
+      <header className="h-24 fixed top-0 left-0 right-0 bg-white flex items-center px-72 border-b border-gray-100">
         <nav className="flex items-center justify-between w-full">
+          {/* Logo with name */}
           <Link href="/" className="flex items-center gap-2">
             <Image
               src={Logo}
@@ -22,6 +23,7 @@ export default function Navbar() {
             </h1>
           </Link>
 
+          {/* Navigation button links */}
           <ul className="hidden lg:flex items-center gap-8">
             <li>
               <NavLink href="/">Home</NavLink>

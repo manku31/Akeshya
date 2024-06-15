@@ -41,25 +41,23 @@ export default function Navbar() {
               />
             </div>
 
-            <div>
-              <ul className="hidden lg:flex items-center gap-8">
-                <li>
-                  <NavLink href="/">Home</NavLink>
-                </li>
+            <ul className="hidden lg:flex items-center gap-8">
+              <li>
+                <NavLink href="/">Home</NavLink>
+              </li>
 
-                <li>
-                  <NavLink href="/about">About</NavLink>
-                </li>
+              <li>
+                <NavLink href="/about">About</NavLink>
+              </li>
 
-                <li>
-                  <NavLink href="/services">Services</NavLink>
-                </li>
+              <li>
+                <NavLink href="/services">Services</NavLink>
+              </li>
 
-                <li className="text-white bg-blue-900 hover:bg-sky-600 rounded-full px-5 py-2  translate-all duration-200">
-                  <Link href="/contact">Contact us</Link>
-                </li>
-              </ul>
-            </div>
+              <li className="text-white bg-blue-900 hover:bg-sky-600 rounded-full px-5 py-2  translate-all duration-200">
+                <Link href="/contact">Contact us</Link>
+              </li>
+            </ul>
           </nav>
         </header>
       ) : (

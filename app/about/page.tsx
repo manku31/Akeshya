@@ -1,7 +1,11 @@
-export default function About() {
+import About from "@/components/About";
+import Counts from "@/components/Counts";
+
+export default function AboutPage() {
   return (
-    <div>
-      <p>About Page</p>
-    </div>
+    <main className="mt-36">
+      <About />
+      <Counts />
+    </main>
   );
 }

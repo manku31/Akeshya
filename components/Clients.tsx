@@ -18,7 +18,7 @@ export default function Clients() {
   ];
   
   return (
-    <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6 p-32 justify-items-center my-10 bg-sky-50 py-4">
+    <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6 px-4 justify-items-center my-10 bg-sky-50 py-4">
       {clients.map((client, index) => (
         <Image
           key={index}

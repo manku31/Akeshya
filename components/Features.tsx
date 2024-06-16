@@ -17,7 +17,7 @@ import FeatureCard from "./card/FeatureCard";
 export default function Features() {
   return (
     <>
-      <div className="space-y-4 my-10">
+      <div className="space-y-4 my-10 lg:px-56">
         <div className="flex items-center gap-4 justify-center">
           <div className="border border-blue-900 w-14" />
           <h1 className="text-2xl text-center font-bold">OUR CORE FEATURES</h1>

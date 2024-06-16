@@ -21,7 +21,7 @@ export default function Navbar() {
     <>
       {!toggle ? (
         <header className="fixed top-0 right-0 left-0 h-24 px-3 flex items-center md:px-20 z-50 border-b border-gray-100 bg-white">
-          <nav className="flex items-center justify-between w-full">
+          <nav className="flex items-center justify-between w-full lg:px-56">
             <Link href={"/"} className="flex items-center gap-2">
               <Image
                 src={akeshyaLogo}

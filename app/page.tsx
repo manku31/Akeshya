@@ -7,8 +7,7 @@ import ContactPage from "./contact/page";
 
 export default function Home() {
   return (
-    <main className="mt-36"> 
-    {/* px-56 */}
+    <main className="mt-36">
       <Hero />
       <Clients />
       <AboutPage />

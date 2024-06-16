@@ -16,15 +16,15 @@ export default function Clients() {
     { src: Client5, alt: "Client 5 logo" },
     { src: Client6, alt: "Client 6 logo" },
   ];
-  
+
   return (
-    <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6 px-4 justify-items-center my-10 bg-sky-50 py-4">
+    <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6 px-4 justify-items-center my-10 bg-sky-50 py-4 mt-52 lg:mt-0 lg:px-56">
       {clients.map((client, index) => (
         <Image
           key={index}
           src={client.src}
           alt={client.alt}
-          className="w-28 h-20 m-4"
+          className="client-logo w-28 h-20 m-4"
         />
       ))}
     </div>

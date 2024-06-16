@@ -2,8 +2,8 @@ import Contact from "@/components/Contact";
 
 export default function ContactPage() {
   return (
-    <div>
+    <main className="mt-36 lg:px-56">
       <Contact />
-    </div>
+    </main>
   );
 }

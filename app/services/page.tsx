@@ -3,9 +3,9 @@ import Services from "@/components/Services";
 
 export default function ServicesPage() {
   return (
-    <div>
+    <main className="mt-36 lg:px-56">
       <Services />
       <Process />
-    </div>
+    </main>
   );
 }

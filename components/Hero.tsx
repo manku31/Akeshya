@@ -5,7 +5,7 @@ import officeImg from "../public/images/hero-img.png";
 export default function Hero() {
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row items-center mx-4 lg:mx-20 mb-10">
+      <div className="flex flex-col-reverse lg:flex-row items-center mx-4 lg:mx-20 mb-10 lg:px-56">
         <div className="lg:w-1/2 space-y-4">
           <h1 className="font-semibold text-blue-900 text-2xl lg:text-5xl">
             Grow your business with Akeshya

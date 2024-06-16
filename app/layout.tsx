@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import BackToTop from "@/components/BackToTop";
 
+import AOSInitializer from "@/components/AOSInitializer";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <AOSInitializer />
         {children}
         <BackToTop />
         <Footer />

@@ -25,6 +25,8 @@ export default function Clients() {
           src={client.src}
           alt={client.alt}
           className="client-logo w-28 h-20 m-4"
+          data-aos="zoom-in"
+          data-aos-delay="100"
         />
       ))}
     </div>

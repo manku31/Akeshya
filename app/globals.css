@@ -71,3 +71,15 @@ body {
 .service-card:hover .cross {
   opacity: 0;
 }
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

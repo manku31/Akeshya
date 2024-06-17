@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import BackToTop from "@/components/BackToTop";
 
-import AOSInitializer from "@/components/AOSInitializer";
+import AOSInitializer from "@/configs/AOSInitializer";
 
 const inter = Inter({ subsets: ["latin"] });
 

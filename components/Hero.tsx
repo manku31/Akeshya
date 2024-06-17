@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import officeImg from "../public/images/hero-img.png";
 
-import "./animation.css";
+// import "./animation.css";
 
 export default function Hero() {
   return (
@@ -30,7 +30,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="lg:w-1/2 m-10 image-in-hero" data-aos="fade-left">
+        <div className="lg:w-1/2 m-10" data-aos="fade-left">
           <Image
             src={officeImg}
             alt="Office Image"

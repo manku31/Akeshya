@@ -1,4 +1,4 @@
-import NavLink from "./NavLink";
+import NavLink from "./features/NavLink";
 import Link from "next/link";
 
 import { RxCross2 } from "react-icons/rx";

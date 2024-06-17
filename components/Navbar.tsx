@@ -7,7 +7,7 @@ import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import akeshyaLogo from "@/public/images/logo.png";
-import NavLink from "./NavLink";
+import NavLink from "./features/NavLink";
 import MobileNavbar from "./MobileNavBar";
 
 export default function Navbar() {

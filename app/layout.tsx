@@ -5,9 +5,10 @@ import "./globals.css";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import BackToTop from "@/components/BackToTop";
+
 
 import AOSInitializer from "@/configs/AOSInitializer";
+import BackToTop from "@/components/features/BackToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 

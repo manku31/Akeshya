@@ -2,8 +2,6 @@ import Image from "next/image";
 
 import officeImg from "../public/images/hero-img.png";
 
-// import "./animation.css";
-
 export default function Hero() {
   return (
     <>

@@ -1,6 +1,6 @@
+import { FaPhone } from "react-icons/fa6";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { IoMdMail } from "react-icons/io";
-import { FaPhone } from "react-icons/fa6";
 
 export default function Contact() {
   return (

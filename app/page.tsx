@@ -1,9 +1,9 @@
-import Hero from "@/components/Hero";
-import Clients from "@/components/Clients";
 import AboutPage from "./about/page";
-import ServicesPage from "./services/page";
-import Features from "@/components/Features";
+import Clients from "@/components/Clients";
 import ContactPage from "./contact/page";
+import Features from "@/components/Features";
+import Hero from "@/components/Hero";
+import ServicesPage from "./services/page";
 
 export default function Home() {
   return (

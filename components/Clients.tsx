@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import Client1 from "../public/images/client-1.png";
-import Client2 from "../public/images/client-2.png";
-import Client3 from "../public/images/client-3.png";
-import Client4 from "../public/images/client-4.png";
-import Client5 from "../public/images/client-5.png";
-import Client6 from "../public/images/client-6.png";
+import Client1 from "@/public/images/client-1.png";
+import Client2 from "@/public/images/client-2.png";
+import Client3 from "@/public/images/client-3.png";
+import Client4 from "@/public/images/client-4.png";
+import Client5 from "@/public/images/client-5.png";
+import Client6 from "@/public/images/client-6.png";
 
 export default function Clients() {
   const clients = [

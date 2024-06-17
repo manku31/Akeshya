@@ -1,16 +1,16 @@
-import { PiCalculatorFill } from "react-icons/pi";
+import { BsFillMusicPlayerFill } from "react-icons/bs";
+import { FaMale } from "react-icons/fa";
+import { FaCalendarDay } from "react-icons/fa6";
+import { GrTarget } from "react-icons/gr";
 import {
   MdOutlineDeveloperMode,
   MdOutlineLocationOn,
   MdLeaderboard,
 } from "react-icons/md";
-import { FaMale } from "react-icons/fa";
-import { SiYoutubemusic } from "react-icons/si";
+import { PiCalculatorFill } from "react-icons/pi";
 import { RiSearchEyeLine, RiContactsBookLine } from "react-icons/ri";
+import { SiYoutubemusic } from "react-icons/si";
 import { SlCalender } from "react-icons/sl";
-import { BsFillMusicPlayerFill } from "react-icons/bs";
-import { FaCalendarDay } from "react-icons/fa6";
-import { GrTarget } from "react-icons/gr";
 
 import FeatureCard from "./cards/FeatureCard";
 

@@ -1,11 +1,12 @@
 import Image from "next/image";
 
-import { FaRegSmile } from "react-icons/fa";
-import { MdPhonelinkRing } from "react-icons/md";
-import { LuClock4 } from "react-icons/lu";
 import { BsGlobe } from "react-icons/bs";
+import { FaRegSmile } from "react-icons/fa";
+import { LuClock4 } from "react-icons/lu";
+import { MdPhonelinkRing } from "react-icons/md";
 
-import CountsSVG from "../public/images/counts-img.svg";
+import CountsSVG from "@/public/images/counts-img.svg";
+
 import CountFeature from "./features/CountFeature";
 
 export default function Counts() {

@@ -1,14 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import akeshyaLogo from "@/public/images/logo.png";
-import NavLink from "./features/NavLink";
+
 import MobileNavbar from "./MobileNavBar";
+import NavLink from "./features/NavLink";
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);

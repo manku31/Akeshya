@@ -1,5 +1,5 @@
-import { FaBasketball } from "react-icons/fa6";
 import { FaGlobeAfrica } from "react-icons/fa";
+import { FaBasketball } from "react-icons/fa6";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { PiSpeedometerFill } from "react-icons/pi";
 

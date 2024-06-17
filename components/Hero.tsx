@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import officeImg from "../public/images/hero-img.png";
+import officeImg from "@/public/images/hero-img.png";
+
 import Button from "./features/Button";
 
 export default function Hero() {

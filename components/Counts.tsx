@@ -6,6 +6,7 @@ import { LuClock4 } from "react-icons/lu";
 import { BsGlobe } from "react-icons/bs";
 
 import CountsSVG from "../public/images/counts-img.svg";
+import CountFeature from "./features/CountFeature";
 
 export default function Counts() {
   return (
@@ -18,14 +19,24 @@ export default function Counts() {
         data-aos-delay="150"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-10"
+        data-aos="fade-left"
+        data-aos-delay="150"
+      >
         <div className="flex gap-4">
           <FaRegSmile size={40} className="text-blue-900" />
           <div>
-            <p className="font-bold text-x1">3835039</p>
+            <CountFeature
+              targetValue={3835039}
+              duration={2000}
+              threshold={0.5}
+              className={`text-[36px] text-black font-bold`}
+              initialValue={10001}
+            />
             <p>
-              Organic Reach <span className="text-gray-600">(Global)</span>
+              <b>Organic Reach </b>
+              <span className="text-gray-600">(Global)</span>
             </p>
           </div>
         </div>
@@ -33,17 +44,32 @@ export default function Counts() {
         <div className="flex gap-4">
           <MdPhonelinkRing size={40} className="text-blue-900" />
           <div>
-            <p className="font-bold text-x1">85</p>
-            <p>Campaigns</p>
+            <CountFeature
+              targetValue={85}
+              duration={1000}
+              threshold={0.5}
+              className={`text-[36px] text-black font-bold`}
+              initialValue={85}
+            />
+            <p>
+              <b>Campaigns</b>
+            </p>
           </div>
         </div>
 
         <div className="flex gap-4">
           <LuClock4 size={40} className="text-blue-900" />
           <div>
-            <p className="font-bold text-x1">14081</p>
+            <CountFeature
+              targetValue={14081}
+              duration={2000}
+              threshold={0.5}
+              className={`text-[36px] text-black font-bold`}
+              initialValue={102}
+            />
             <p>
-              Watch Hours <span className="text-gray-600">(Asia)</span>
+              <b>Watch Hours </b>
+              <span className="text-gray-600">(Asia)</span>
             </p>
           </div>
         </div>
@@ -51,13 +77,19 @@ export default function Counts() {
         <div className="flex gap-4">
           <BsGlobe size={40} className="text-blue-900" />
           <div>
-            <p className="font-bold text-x1">17</p>
+            <CountFeature
+              targetValue={17}
+              duration={1000}
+              threshold={0.5}
+              className={`text-[36px] text-black font-bold`}
+              initialValue={17}
+            />
             <p>
-              Excellent CTR % <span className="text-gray-600">(Asia)</span>
+              <b>Excellent CTR % </b>
+              <span className="text-gray-600">(Asia)</span>
             </p>
           </div>
         </div>
-        
       </div>
     </div>
   );

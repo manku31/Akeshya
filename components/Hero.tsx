@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import officeImg from "../public/images/hero-img.png";
+import Button from "./features/Button";
 
 export default function Hero() {
   return (
@@ -19,13 +20,12 @@ export default function Hero() {
             marketeers
           </p>
 
-          <button
-            className="bg-white rounded-full border border-blue-900 hover:bg-blue-900 hover:text-white px-5 py-2 translate-y-full duration-300"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            Get Started
-          </button>
+          <Button
+            title=" Get Started"
+            path="/about"
+            dataAosDelay="600"
+            dataAos="fade-up"
+          />
         </div>
 
         <div className="lg:w-1/2 m-10" data-aos="fade-left">

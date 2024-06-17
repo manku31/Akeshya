@@ -1,3 +1,5 @@
+import Button from "./features/Button";
+
 export default function About() {
   return (
     <div className="mx-4 md:mx-10 lg:mx-24">
@@ -54,9 +56,8 @@ export default function About() {
             your goals.
           </p>
 
-          <button className="bg-white rounded-full border border-blue-900 hover:bg-blue-900 hover:text-white translate-all duration-300 px-5 py-2">
-            Learn More
-          </button>
+         
+          <Button title="Learn More" path="/services"  />
         </div>
       </div>
     </div>

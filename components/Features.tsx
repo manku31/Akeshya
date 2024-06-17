@@ -12,25 +12,32 @@ import { BsFillMusicPlayerFill } from "react-icons/bs";
 import { FaCalendarDay } from "react-icons/fa6";
 import { GrTarget } from "react-icons/gr";
 
-import FeatureCard from "./card/FeatureCard";
+import FeatureCard from "./cards/FeatureCard";
 
 export default function Features() {
   return (
     <>
       <div className="space-y-4 my-10 lg:px-56">
-        <div className="flex items-center gap-4 justify-center">
+        <div
+          className="flex items-center gap-4 justify-center"
+          data-aos="fade-up"
+        >
           <div className="border border-blue-900 w-14" />
           <h1 className="text-2xl text-center font-bold">OUR CORE FEATURES</h1>
           <div className="border border-blue-900 w-14" />
         </div>
-        <p className="text-center">
+        <p className="text-center" data-aos="fade-up">
           Akeshya is a forward-thinking and intelligent design firm that is
           technically and creatively capable of transforming your brand into its
           best digital self. Our approach to design and development results in
           compelling, engaging branding and immersive digital experiences that
           provide a value for money.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-5 mx-6 md:mx-10 lg:mx-16 py-10">
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-5 mx-6 md:mx-10 lg:mx-16 py-10"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <FeatureCard
             icon={() => (
               <PiCalculatorFill size={30} className="text-yellow-500" />

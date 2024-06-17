@@ -13,10 +13,13 @@ export default function Counts() {
       <Image
         src={CountsSVG}
         alt="Winner logo"
-        className="h-96 w-96 lg:w-[450px]"
+        className="h-96 w-96 lg:w-[40%]"
+        data-aos="fade-right"
+        data-aos-delay="150"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
         <div className="flex gap-4">
           <FaRegSmile size={40} className="text-blue-900" />
           <div>
@@ -54,6 +57,7 @@ export default function Counts() {
             </p>
           </div>
         </div>
+        
       </div>
     </div>
   );

@@ -22,6 +22,7 @@ export default function BackToTop() {
     };
   }, []);
 
+  // Function to scroll the window to the top smoothly
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

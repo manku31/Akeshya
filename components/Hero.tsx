@@ -23,7 +23,7 @@ export default function Hero() {
 
           <Button
             title=" Get Started"
-            path=""
+            path="/about"
             dataAosDelay="600"
             dataAos="fade-up"
           />

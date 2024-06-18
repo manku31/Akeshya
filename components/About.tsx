@@ -56,7 +56,7 @@ export default function About() {
             your goals.
           </p>
 
-          <Button title="Learn More" path="/services" />
+          <Button title="Learn More" distance={1700} />
         </div>
       </div>
     </div>

@@ -22,8 +22,8 @@ export default function Hero() {
           </p>
 
           <Button
-            title=" Get Started"
-            path="/about"
+            title="Get Started"
+            distance={820}
             dataAosDelay="600"
             dataAos="fade-up"
           />

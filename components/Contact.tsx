@@ -1,8 +1,19 @@
+"use client";
+
+import { useState } from "react";
+
 import { FaPhone } from "react-icons/fa6";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { IoMdMail } from "react-icons/io";
+import SubmitModal from "./modal/SubmitModal";
 
 export default function Contact() {
+  const [open, setOpen] = useState(false);
+
+  const handleSendMessageClick = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+
   return (
     <div className="my-10">
       <div
@@ -53,28 +64,37 @@ export default function Contact() {
           <input
             className="border border-gray-400 px-4 py-2"
             placeholder="Your Name"
+            required
           />
           <input
             className="border border-gray-400 px-4 py-2"
             placeholder="Your Email"
+            type="email"
+            required
           />
           <input
             className="border border-gray-400 px-4 py-2"
             placeholder="Your Subject"
+            required
           />
           <textarea
             rows={4}
             cols={4}
             className="border border-gray-400 px-4 py-2"
             placeholder="Message"
+            required
           />
+
           <button
             type="submit"
             className="text-white bg-blue-900 hover:bg-sky-600 rounded-full px-5 py-2 translate-all duration-200"
+            onClick={handleSendMessageClick}
           >
             Send Message
           </button>
         </form>
+
+        {open && <SubmitModal onClose={handleSendMessageClick} />}
       </div>
     </div>
   );

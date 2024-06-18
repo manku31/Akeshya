@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { ChangeEvent, MouseEvent, useState } from "react";
 
 import { FaPhone } from "react-icons/fa6";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -9,9 +9,30 @@ import SubmitModal from "./modal/SubmitModal";
 
 export default function Contact() {
   const [open, setOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  const handleSendMessageClick = () => {
-    setOpen((prevOpen) => !prevOpen);
+  const handleSendMessageClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const { name, email, subject, message } = formData;
+
+    if (name && email && subject && message) {
+      setOpen(true);
+    } else {
+      alert("Please fill out all fields.");
+    }
+  };
+
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+
+    setFormData({ ...formData, [name]: value });
   };
 
   return (
@@ -64,17 +85,26 @@ export default function Contact() {
           <input
             className="border border-gray-400 px-4 py-2"
             placeholder="Your Name"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
             required
           />
           <input
             className="border border-gray-400 px-4 py-2"
             placeholder="Your Email"
             type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
             required
           />
           <input
             className="border border-gray-400 px-4 py-2"
             placeholder="Your Subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleInputChange}
             required
           />
           <textarea
@@ -82,6 +112,9 @@ export default function Contact() {
             cols={4}
             className="border border-gray-400 px-4 py-2"
             placeholder="Message"
+            name="message"
+            value={formData.message}
+            onChange={handleInputChange}
             required
           />
 
@@ -94,7 +127,7 @@ export default function Contact() {
           </button>
         </form>
 
-        {open && <SubmitModal onClose={handleSendMessageClick} />}
+        {open && <SubmitModal onClose={() => setOpen(false)} />}
       </div>
     </div>
   );

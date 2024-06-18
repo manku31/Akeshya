@@ -60,7 +60,6 @@ export default function Contact() {
           className="flex flex-col gap-5 lg:w-1/3"
           data-aos="fade-up"
           data-aos-delay="300"
-          onSubmit={handleSendMessageClick}
         >
           <input
             className="border border-gray-400 px-4 py-2"
@@ -89,12 +88,12 @@ export default function Contact() {
           <button
             type="submit"
             className="text-white bg-blue-900 hover:bg-sky-600 rounded-full px-5 py-2 translate-all duration-200"
+            onClick={handleSendMessageClick}
           >
             Send Message
           </button>
-
         </form>
-        
+
         {open && <SubmitModal onClose={handleSendMessageClick} />}
       </div>
     </div>

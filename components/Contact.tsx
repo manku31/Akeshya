@@ -93,7 +93,6 @@ export default function Contact() {
             Send Message
           </button>
         </form>
-
         {open && <SubmitModal onClose={handleSendMessageClick} />}
       </div>
     </div>

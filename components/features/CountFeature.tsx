@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 
 interface Props {
   initialValue?: number;
@@ -20,24 +20,23 @@ export default function CountFeature({
   const [count, setCount] = useState(initialValue);
   const counterRef = useRef<HTMLElement>(null);
 
+  const updateCount = useCallback(() => {
+    setCount((prevCount) => {
+      const increment = Math.ceil((targetValue - prevCount) / (duration / 50));
+      if (prevCount < targetValue) {
+        return Math.min(prevCount + increment, targetValue);
+      } else {
+        return prevCount;
+      }
+    });
+  }, [targetValue, duration]);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const interval = setInterval(() => {
-              const increment = Math.ceil(
-                (targetValue - count) / (duration / 50)
-              );
-              if (count < targetValue) {
-                setCount((prevCount) =>
-                  Math.min(prevCount + increment, targetValue)
-                );
-              } else {
-                clearInterval(interval);
-              }
-            }, 50);
-
+            const interval = setInterval(updateCount, 50);
             return () => clearInterval(interval);
           }
         });
@@ -50,7 +49,7 @@ export default function CountFeature({
     }
 
     return () => observer.disconnect();
-  }, [targetValue, duration, threshold]);
+  }, [threshold, updateCount]);
 
   return (
     <span ref={counterRef} className={className}>

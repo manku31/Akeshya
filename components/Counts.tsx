@@ -30,10 +30,10 @@ export default function Counts() {
           <div>
             <CountFeature
               targetValue={3835039}
-              duration={2000}
+              duration={400}
               threshold={0.5}
               className={`text-[36px] text-black font-bold`}
-              initialValue={10001}
+              initialValue={2030009}
             />
             <p>
               <b>Organic Reach </b>
@@ -47,7 +47,7 @@ export default function Counts() {
           <div>
             <CountFeature
               targetValue={85}
-              duration={1000}
+              duration={200}
               threshold={0.5}
               className={`text-[36px] text-black font-bold`}
               initialValue={85}
@@ -63,7 +63,7 @@ export default function Counts() {
           <div>
             <CountFeature
               targetValue={14081}
-              duration={2000}
+              duration={300}
               threshold={0.5}
               className={`text-[36px] text-black font-bold`}
               initialValue={102}

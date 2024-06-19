@@ -42,18 +42,18 @@ export default function About() {
         </div>
 
         <div
-          className="lg:w-1/2 space-y-5"
+          className="lg:w-1/2 -space-y-96"
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="2000"
         >
           <p>
-            We're professional, but we're also friendly, and we'll always pay
-            attention to your concerns. We expect to work with innovative people
-            that have an open mind and are dedicated to making every idea a
-            reality. We want to hear from you if you're interested in SEO, have
-            Web Development ideas, or require a graphic designer who can match
-            your goals.
+            We&apos;re professional, but we&apos;re also friendly, and
+            we&apos;ll always pay attention to your concerns. We expect to work
+            with innovative people that have an open mind and are dedicated to
+            making every idea a reality. We want to hear from you if you&apos;re
+            interested in SEO, have Web Development ideas, or require a graphic
+            designer who can match your goals.
           </p>
 
           <Button title="Learn More" distance={1700} />

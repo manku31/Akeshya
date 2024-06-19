@@ -1,10 +1,7 @@
 # Akeshya
 
-**The web application is a sleek, modern, and responsive web application designed to showcase the my skills. Developed using Next.js, this project focuses on providing a seamless user experience with fast loading times and smooth navigation. The site features a clean and professional design, reflecting the quality and reliability.**
+**This web application is a sleek, modern, and responsive web application designed to showcase the my skills. Developed using Next.js, this project focuses on providing a seamless user experience with fast loading times and smooth navigation. The site features a clean and professional design, reflecting the quality and reliability.**
 
-
-## Note
-**This project was created as part of an assignment given to me by Akeshya. After being shortlisted for a frontend developer position at their company, I was tasked with developing this web application to demonstrate my skills and abilities. This assignment     showcases my proficiency in using Next.js to build efficient, visually appealing, and user-friendly web applications.**
 
 ## Links
 
@@ -39,8 +36,11 @@
 
 ## Tools Used
 
-    - Next.js
-    - Tailwind css
+- Next.js  : For server-side rendering and static site generation
+- Tailwind css : For rapid UI development with utility-first CSS classes
+- Aos : For responsive animation design and pre-designed components
+
+
 
 
 ## Follow these steps to run this on your local machine:

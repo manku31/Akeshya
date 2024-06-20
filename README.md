@@ -5,7 +5,7 @@
 
 ## Links
 
- - **Live Link** : [Live URL](https://akeshya-next.vercel.app/)
+ - **Live Link** : [Live URL](https://akeshya-767.pages.dev)
 
 
 ## Screen Short
